@@ -2,6 +2,7 @@
 
 Adds additional maps to Strava.com:
 
+ - [OpenTopoMap](https://www.opentopomap.org/)
  - [OpenStreetMap](https://www.openstreetmap.org/)
  - [Thunderforest Maps](http://www.thunderforest.com/maps/): OpenCycleMap, Transport, Outdoors
  - [mtbmap.cz](http://mtbmap.cz/)

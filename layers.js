@@ -12,10 +12,15 @@
 
 var AdditionalMapLayers = (function(){
 	var osmAttr = '&copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>';
+	var otmAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+            'Imagery &copy <a href="https://opentopomap.org">OpenTopoMap</a>'
 	var thunderforestAttr = osmAttr + ', Tiles courtesy of <a href="http://www.thunderforest.com/" target="_blank">Andy Allan</a>';
 	var mtbMapAttr = osmAttr + ', Tiles courtesy of <a href="http://mtbmap.cz/" target="_blank">mtbmap.cz</a>';
 	var mapyCzAttr = '&copy; <a href="https://www.seznam.cz/" target="_blank">Seznam.cz, a.s</a>, ' + osmAttr;
 	return [
+		{type: "opentopomap", name: "OpenTopoMap",
+			url: "http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+			opts: {maxZoom: 20, maxNativeZoom: 19, attribution: otmAttr}},
 		{type: "openstreetmap", name: "OpenStreetMap",
 			url: "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 			opts: {maxZoom: 20, maxNativeZoom: 19, attribution: osmAttr}},
