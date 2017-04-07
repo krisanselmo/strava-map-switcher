@@ -17,4 +17,4 @@
 // @downloadURL https://rawgit.com/liskin/strava-map-switcher/master/greasemonkey.user.js
 // ==/UserScript==
 
-jQuery('body').append(jQuery("<script src='https://rawgit.com/liskin/strava-map-switcher/master/inject.js'></script>"));
+jQuery('body').append(jQuery("<script src='https://rawgit.com/krisanselmo/strava-map-switcher/master/inject.js'></script>"));
